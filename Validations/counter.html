@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./counter.js" defer></script>
+</head>
+
+<body>
+
+    <div class="project-buttons">
+        <a href="index.html">
+            << Home</a>
+                <a href="login.html">
+                    << Project 1 </a>
+    </div>
+    <h1>Counter Character</h1>
+    <form id="counterForm" class="form-space">
+        <fieldset>
+            <legend>Character Counter</legend>
+            <div class="row">
+                <div class="space">
+                    <label for="comments">Your Comments:</label>
+                    <textarea id="textComments" name="comments" rows="6" maxlength="300"
+                        placeholder="Type your message here..."></textarea>
+
+                </div>
+
+                <!-- This element displays the remaining characters to the user -->
+                <div class="counter-text">
+                    <small id="textError" class="errorMessage message-centre hidden-errorMessage"></small>
+                    <small id="textWarning" class="warningMessage message-centre hidden-errorMessage"></small><br><br>
+                    <span id="charCount">0</span> / 300 characters and still
+                    <span id="charRemaining">300</span> characters are left
+                </div>
+
+                <div class="space">
+                    <label></label>
+                    <button id="btnSubmit" class="btn-space">Submit</button>
+                </div>
+
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

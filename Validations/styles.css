@@ -1,0 +1,222 @@
+body {
+    margin-left: 20%;
+}
+
+.form-space {
+    width: 500px !important;
+}
+
+.row {
+    background: #f6f6f6;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.col {
+    float: left;
+}
+
+.space {
+    display: grid;
+    grid-template-columns: 120px 250px;
+    column-gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.btn-space {
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-space:hover {
+    background-color: #3b7d7f;
+}
+
+.text-size {
+    width: 220px;
+    height: 25px;
+}
+
+
+/* Grid Container */
+.grid-container {
+    margin-top: 50px;
+    display: grid;
+    /* Defines a strict 6-column structure layout */
+    grid-template-columns: repeat(6, 1fr);
+    /* Automatically handles dynamic implicit row additions */
+    grid-auto-rows: minmax(40px, auto);
+
+    /* Clever Border Trick: Container background acts as the inner grid lines */
+    background-color: #cccccc;
+    gap: 1px;
+    border: 1px solid #cccccc;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Grid Items */
+.grid-item {
+    background-color: #ffffff;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.gender-selection-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-self: start;
+}
+
+/* Rounded checkbox */
+.checkbox-option input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #666;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+.grid-delete {
+    background-color: red;
+    color: white;
+    border-radius: 12px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Checked style */
+.checkbox-option input[type="checkbox"]:checked {
+    background: #2196f3;
+    border-color: #2196f3;
+}
+
+/* White dot */
+.checkbox-option input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+/* Bold label text */
+.main-label {
+    font-weight: 600;
+    color: #333333;
+}
+
+/* Clickable checkbox rows */
+.checkbox-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* project buttons */
+
+.project-buttons {
+    display: flex;
+    justify-content: flex-end;
+    /* Moves buttons to the right */
+    gap: 10px;
+    /* Space between buttons */
+    margin: 20px 20px 20px 0;
+}
+
+.project-buttons a {
+    padding: 8px 16px;
+    background-color: cadetblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.project-buttons a:hover {
+    background-color: #3b7d7f;
+}
+
+/* text area */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    font-family: sans-serif;
+}
+
+textarea {
+    resize: vertical;
+    padding: 8px;
+}
+
+.counter-text {
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #3B7D7F;
+}
+
+.errorMessage {
+    color: red;
+    display: block;
+}
+
+.hidden-errorMessage {
+    display: none !important;
+}
+
+.space button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.message-centre {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.warningMessage {
+    color: #E2CE02;
+}
+
+/* #charRemaining{
+    padding-left: 15px;
+} */

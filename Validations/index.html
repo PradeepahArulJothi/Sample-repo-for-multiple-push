@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Tasks</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="project-buttons">
+        <a href="login.html">Project 1 >></a>
+        <a href="counter.html">Project 2 >></a>
+    </div>
+    <h1>Student Details Task</h1>
+
+    <form id="studentForm" class="form-space">
+        <fieldset>
+            <legend>Student Detail</legend>
+            <div class="row">
+                <div class="space">
+                    <label for="fname">Full name:</label>
+                    <input class="text-size" type="text" id="stuName" name="fname"><br>
+                </div>
+                <div class="space">
+                    <label for="age">Age:</label>
+                    <input class="text-size" type="number" id="stuAge" name="age"><br>
+                </div>
+                <div class="space">
+                    <label for="gender">Gender:</label>
+                    <div class="gender-selection-group">
+                        <label class="checkbox-option">
+                            <input type="radio" id="stuMale" name="gender" value="male" checked>
+                            Male
+                        </label>
+
+                        <label class="checkbox-option">
+                            <input type="radio" id="stuFemale" name="gender" value="female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+
+                <div class="space">
+                    <label for="course">Course:</label>
+                    <input class="text-size" type="text" id="stuCourse" name="course"><br>
+                </div>
+                <div class="space">
+                    <label for="email">Email:</label>
+                    <input class="text-size" type="email" id="stuEmail" name="email"><br><br>
+                </div>
+                <div class="space">
+                    <label></label>
+                    <button type="button" id="save" onclick="studentSubmit()" class="btn-space">Save</button>
+                </div>
+
+            </div>
+        </fieldset>
+    </form>
+
+    <div id="myDiv" class="grid-container hidden">
+        <div class="grid-item">Name</div>
+        <div class="grid-item">Age</div>
+        <div class="grid-item">Gender</div>
+        <div class="grid-item">Course</div>
+        <div class="grid-item">Email</div>
+        <div class="grid-item">Action</div>
+    </div>
+
+</body>
+
+</html>
